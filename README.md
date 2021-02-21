@@ -1,4 +1,6 @@
-Basic HTML covering;
+Link to live [here](https://jameslusk.github.io/sandBox-1/).
+
+Basic HTML5 covering;
 
 * Basic Layout
 * Liver Server
