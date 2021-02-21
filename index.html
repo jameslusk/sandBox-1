@@ -7,10 +7,12 @@
   <meta name="description" content="This is my website description">
   <meta name="keywords" content="website, web developers, etc.">
 
-  <title>sandBox #1</title>
+  <title>HTML BASICS</title>
 </head>
 
 <body>
+
+  <!-- TYPE BASICS -->
   <div style="margin: 20px 0">
     <h1>Hello World!</h1>
     <h2>This is NOT my first website.</h2>
@@ -33,6 +35,8 @@
     </p>
   </div>
 
+  <!-- IMAGES -->
+
   <div style="margin: 20px 0">
     <a href="https://google.com" target="_blank">Click for GOOGLE</a><br>
     <a href="/about.html">Internal Link</a><br>
@@ -45,6 +49,7 @@
     <img src="https://source.unsplash.com/800x800/?nature,water" alt="water" width="100%">
   </div>
 
+  <!-- LISTS -->
   <div style="margin: 20px 0">
     <ul style="list-style: circle">
       <!-- style="list-style: none;" THIS TAKES AWAY BULLET POINTS -->
@@ -75,6 +80,8 @@
 
   </div>
 
+  <!-- TABLES -->
+
   <div>
     <table>
       <thead>
@@ -104,6 +111,159 @@
       </tbody>
     </table>
   </div>
+
+  <!-- FORMS -->
+  <div style="margin: 20px 0">
+    <form action="process.php">
+
+      <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" value="John Doe">
+      </div>
+
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+
+      <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="sex">Sex</label><br>
+        <select name="sex" id="sex">
+          <option value="select" selected>-Select-</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+      </div>
+
+      <div>
+        <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+
+      <div>
+        <label for="membership">Membership</label>:
+        <input type="radio" name="membership" id="membership" value="simple" id="membership">Simple
+        <input type="radio" name="membership" id="membership" value="standard" id="membership" checked>Standard
+        <input type="radio" name="membership" id="membership" value="super" id="membership">Super
+      </div>
+
+      <div>
+        <label for="hobbies">Hobbies</label>:
+        <input type="checkbox" name="hobbies" id="hobbies" value="art" id="hobbies">Art
+        <input type="checkbox" name="hobbies" id="hobbies" value="gaming" id="hobbies">Gaming
+        <input type="checkbox" name="hobbies" id="hobbies" value="sewing" id="hobbies">Sewing
+      </div>
+
+      <input type="submit" value="Submit"><br>
+
+      <button type="submit">Submit</button><br>
+
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+
+  <!-- INLINE VS BLOCK HTML -->
+  <div style="margin: 20px 0">
+
+    <!-- paragraphs are block -->
+    <p style="border: 2px green solid">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis natus iusto
+      libero cum numquam ipsum, quo
+      temporibus illo at consectetur consequatur pariatur. Laborum dolores commodi laboriosam neque, modi voluptas
+      suscipit.
+      Quod ex nesciunt nobis iusto consequatur aut, adipisci perspiciatis aperiam dolores quis laborum perferendis
+    </p>
+    <p style="border: 2px blue solid"> doloribus, temporibus ipsam ad nemo porro. Nobis totam eum delectus quis quas
+      perspiciatis temporibus a aperiam?
+      Iure tempore officia nobis delectus debitis provident illo necessitatibus, voluptate, neque maxime, eveniet quo at
+      aperiam consectetur quasi dignissimos distinctio quisquam! Laboriosam nemo quas impedit tempore deleniti iure
+      voluptatem ea.</p>
+
+    <!-- links are inline -->
+    <a href="#" style="border: 2px red solid">Link</a>
+    <a href="#" style="border: 2px yellow solid">Link2</a>
+  </div>
+
+  <!-- DIVS, SPANS, ID, & CLASSES -->
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .enhance {
+      color: yellow;
+      background-color: black;
+    }
+  </style>
+
+  <div id="main-header" style="margin: 20px 0">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Homepage</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+
+  <div id="about" class="card">
+    <h3>About</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, fugiat, atque maxime
+    <div class="enhance">nobis quae, veniam dolore</div> nobis quae, veniam dolore
+    eius pariatur in <span class="enhance">illum deleniti laborum </span> hic perferendis adipisci soluta necessitatibus
+    velit? Voluptatem,
+    laboriosam. </p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact</h3>
+    <ul>
+      <li>Address: 234 boston st</li>
+      <li>Phone: 234-234-2345</li>
+      <li>Email: wre@gmail.com</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <p>Copyright &copy; 2021</p>
+  </div>
+
+  <!-- ENTITIES -->
+  https://www.w3schools.com/html/html_entities.asp
+
+  <!-- NON BREAKING SPACE -->
+  <div>
+    <p>Hello, my name &nbsp; &nbsp; &nbsp; &nbsp; is James</p>
+  </div>
+  <!-- GREATER THAN AND LESS THAN -->
+  <div>
+    <p>5 &gt; 2</p>
+    <p>1 &lt; 2</p>
+    <p>5 &#62; 2</p>
+  </div>
+
+  <!-- COMPUTER CODE -->
+  <div>
+    <code>
+      &lt;?php echo 'Hello' ?&gt;
+    </code>
+
+    <p>Save the file by pressing <kbd>Ctrl + S</kbd> </p>
+  </div>
+
 </body>
 
 </html>
